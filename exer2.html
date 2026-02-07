@@ -1,0 +1,88 @@
+<!--
+Almocera, Ross Armand T.
+CMSC 100 C-1L 2024-04878
+html code (with accompanying css code) for portfolio webpage
+-->
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Portfolio</title>
+		<!--CSS file-->
+		<link rel="stylesheet" type="text/css" href="styles.css"/>
+		<!--importing font from Google Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+		<!--navigation bar to be placed at top of screen-->
+		<div id="navigation">
+			<a href="#me">Meet Me</a>
+			<a href="#skills">My Skills</a>
+			<a href="#projects">Past Projects</a>
+		</div>
+		<!--1st content box: basic info and autobiography-->
+		<section id="me" class="contentbox">
+			<h1>Hello!</h1>
+			<div class="pair">
+				<!--50% width allows info and picture to be in same level-->
+				<span>I am Ross Armand T. Almocera, but you can call me "Ross"! I am a graduating student from the University of the Philippines Los Baños.</span>
+				<img src="me.jpg" style="width:300px"><!--inline style overrides style in external stylesheet-->
+			</div>
+			<h1>About Me</h1>
+			<!--autobiography-->
+			<p class="container">
+				I am Ross Almocera, a computer science student from UPLB. I enjoy programming, creating programs and watching them function in real time. I am working on improving my skills as a programmer so I can be capable of accomplishing more in the world of technology, especially in game development, which is a true passion of mine.
+			</p>
+		</section>
+		<!--2nd content box: skills-->
+		<section id="skills" class="contentbox">
+			<h1>My Skills</h1>
+			<!--one skill per container-->
+			<div class="container">
+				<h2>Programming</h2>
+				<p>I am experienced in multiple programming languages, including Python, C#, Java, HTML & CSS, Assembly, and more, allowing me to create many different kinds of applications for varying purposes.</p>
+			</div>
+			<div class="container">
+				<h2>Communication in Group Projects</h2>
+				<p>I have experience in coordinating with peers in required projects. I have been responsible for leading the team in the design and creation of program code on multiple occasions.</p>
+			</div>
+		</section>
+		<!--3rd content box: past projects-->
+		<section id="projects" class="contentbox">
+			<h1>Past Projects</h1>
+			<!--one project per pair-->
+			<div class="pair">
+				<span>
+					<h2>MEDICLICK</h2>
+					<p>My first project, MEDICLICK, is a C# program built in Visual Studio with the purpose of letting regular citizens inform themselves of common injuries/health emergencies at home. It was designed to allow the user to be quickly informed of what to do should a medical emergency happen. It also comes with built-in quizzes for the user to test their knowledge on injuries.</p>
+					<p>I was the sole programmer of the project, while my fellow contributors were responsible for the collection of research and information.</p>
+				</span>
+				<img src="mediclick.jpg">
+			</div>
+			<div class="pair">
+				<span>
+					<h2>CEPPR</h2>
+					<p>The CEPPR, short for City Environmental Planner for Pollution Reduction, is a cost-optimization program built with Java and JavaFX meant for cities to minimize costs in reducing pollution in their areas. Given data on pollution reduction per project and the required pollution to reduce, this program can find the lowest possible cost to achieve reduction (if possible).</p>
+					<p>This was a solo project.</p>
+				</span>
+				<img src="tree.jpg">
+			</div>
+			<div class="pair">
+				<span>
+					<h2>Academic Schedule Management System</h2>
+					<p>Also created with Java and JavaFX, the ASMS is a program that allows a student to manage their weekly schedule. One can add and remove classes, and a visual calendar is provided for the user's convenience. It also comes with a registration and login system.</p>
+					<p>I took the lead in the creation of the program, implementing most of the application's core features and logic structure.</p>
+				</span>
+				<img src="amis.jpg">
+			</div>
+		</section>
+		<!--footer with information-->
+		<footer>
+			<p>Author: Ross Armand T. Almocera</p>
+			<p>Contact Me: +639171584889</p>
+		</footer>
+	</body>
+</html>
